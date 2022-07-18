@@ -16,7 +16,9 @@ request.addEventListener('readystatechange', () => {
     } else if (request.readyState === 4) {
         console.log('네트워크 에러가 발생했습니다.');
     }
-});  // 예제3 주소 틀려주기.
+}); 
+
+// 예제3 주소 틀려주기.
 
 // request.open('GET', 'https://jsonplaceholder.typicode.com/todos/'); ==> 예제 1, 2
 request.open('GET', 'https://jsonplaceholder.typicode.com/todooos/');  //==> 예제 3

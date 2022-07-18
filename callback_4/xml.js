@@ -12,9 +12,18 @@ const getJson = (callback) => {
         }
     });
 
-    request.open('GET', 'https://jsonplaceholder.typicode.com/todooos/');  //==> 예제 3
+    request.open('GET', 'https://jsonplaceholder.typicode.com/todos/');  //==> 예제 3
     request.send();
 }
+
+getJson((err, result) => {
+    // console.log('call back fired');
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(result);
+    }
+});
 
 // blocking, non-blockning
 
